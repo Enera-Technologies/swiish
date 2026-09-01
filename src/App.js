@@ -1065,7 +1065,7 @@ const [settings, setSettings] = useState({
           privacy: json.privacy || defaultTemplate.privacy
         });
         setView('public-card');
-        document.title = json.personal?.name ? `${json.personal.name} - Swiish Card` : "Swiish Card";
+        document.title = json.personal?.name ? `${json.personal.name} - Enera Card` : "Enera Card";
       } else {
         setError('Card not found');
         setView('404');
@@ -1815,8 +1815,8 @@ const [settings, setSettings] = useState({
               </form>
               <div className="text-center mt-auto pt-8 pb-0 group relative z-10" style={{ boxSizing: 'content-box' }}>
                 <div className="flex justify-center">
-                  <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-                  <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+                  <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+                  <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
                 </div>
               </div>
             </div>
@@ -1841,8 +1841,8 @@ const [settings, setSettings] = useState({
               </form>
             <div className="text-center mt-8 group relative z-10">
               <div className="flex justify-center">
-                <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-                <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+                <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+                <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
               </div>
             </div>
             </div>
@@ -2030,8 +2030,8 @@ const [settings, setSettings] = useState({
           </div>
           <div className="fixed bottom-4 right-4 z-10 text-center group">
             <div className="flex justify-center">
-              <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-              <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
             </div>
           </div>
           {/* Modals */}
@@ -2479,15 +2479,15 @@ function CardDisplay({ data, settings, darkMode, toggleDarkMode, showAlert }) {
 
   const whatsappLink = ownerPhoneDigits && ownerPhoneDigits.length >= 8
     ? `https://wa.me/${ownerPhoneDigits}?text=${encodeURIComponent(
-        'Hi, we met via your Swiish card. My name is ... and my number/email is ...'
+        'Hi, we met via your Enera card. My name is ... and my number/email is ...'
       )}`
     : null;
 
   const emailLink = ownerEmail
     ? `mailto:${ownerEmail}?subject=${encodeURIComponent(
-        'My details from Swiish'
+        'My details from Enera'
       )}&body=${encodeURIComponent(
-        'Hi, we met via your Swiish card.\nMy name is ...\nMy phone number is ...\nMy email address is ...'
+        'Hi, we met via your Enera card.\nMy name is ...\nMy phone number is ...\nMy email address is ...'
       )}`
     : null;
 
@@ -2764,7 +2764,7 @@ END:VCARD`;
                 <div className="w-full aspect-square flex flex-col items-center justify-center text-text-muted-subtle dark:text-text-secondary-dark text-xs space-y-1">
                   <span>{isOnline ? 'Saved details' : 'Offline mode'}</span>
                   <span className="text-[10px] opacity-80 px-1">
-                    This code includes your saved Swiish details and a link to your card when scanned with an online device.
+                    This code includes your saved Enera details and a link to your card when scanned with an online device.
                   </span>
                 </div>
               ) : (!isOnline && qrMode === 'simple' && !qrSimpleDataUrl) ? (
@@ -2800,7 +2800,7 @@ END:VCARD`;
           {/* Offline note */}
           {!isOnline && offlineQrPayload && (
             <p className="text-xs text-text-muted dark:text-text-muted-dark mt-4 px-4">
-              Using last saved QR details (offline). The code includes your contact info and a link to your Swiish card.
+              Using last saved QR details (offline). The code includes your contact info and a link to your Enera card.
             </p>
           )}
         </div>
@@ -2839,8 +2839,8 @@ END:VCARD`;
           {/* Swiish logo */}
           <div className="bg-card dark:bg-card-dark text-center space-y-2 mt-[24px] mb-[12px]">
             <div className="flex justify-center py-4">
-              <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-              <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
             </div>
           </div>
         </div>
@@ -2924,7 +2924,7 @@ END:VCARD`;
                       showAlert(
                         instructions,
                         'info',
-                        'Install Swiish'
+                        'Install Enera'
                       );
                     } else {
                       // Fallback if showAlert is not available
@@ -3207,8 +3207,8 @@ END:VCARD`;
         {/* Swiish logo */}
         <div className="bg-card dark:bg-card-dark pb-4 text-center space-y-2 mt-auto lg:pb-4">
           <div className="flex justify-center">
-            <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-            <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+            <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+            <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
           </div>
         </div>
       </div>
@@ -3641,8 +3641,8 @@ function EditorView({ data, setData, onBack, onSave, slug, settings, csrfToken, 
       </div>
       <div className="fixed bottom-4 right-4 z-10 text-center group">
         <div className="flex justify-center">
-          <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-          <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
         </div>
       </div>
     </div>
@@ -5400,8 +5400,8 @@ function SettingsView({ settings, setSettings, onBack, onSave, apiCall, showAler
       </div>
       <div className="fixed bottom-4 right-4 z-10 text-center group">
         <div className="flex justify-center">
-          <img src="/graphics/Swiish_Logo.svg" alt="Swiish" className="h-4 w-auto dark:hidden swiish-logo" />
-          <img src="/graphics/Swiish_Logo_DarkBg.svg" alt="Swiish" className="h-4 w-auto hidden dark:block swiish-logo" />
+          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto dark:hidden swiish-logo" />
+          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-4 w-auto hidden dark:block swiish-logo" />
         </div>
       </div>
     </div>
