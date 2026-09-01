@@ -1779,7 +1779,7 @@ const [settings, setSettings] = useState({
               </form>
               <div className="text-center mt-auto pt-8 pb-0 group relative z-10" style={{ boxSizing: 'content-box' }}>
                 <div className="flex justify-center">
-                  <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+                  <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
                 </div>
               </div>
             </div>
@@ -1804,7 +1804,7 @@ const [settings, setSettings] = useState({
               </form>
             <div className="text-center mt-8 group relative z-10">
               <div className="flex justify-center">
-                <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+                <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
               </div>
             </div>
             </div>
@@ -1992,7 +1992,7 @@ const [settings, setSettings] = useState({
           </div>
           <div className="fixed bottom-4 right-4 z-10 text-center group">
             <div className="flex justify-center">
-              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
             </div>
           </div>
           {/* Modals */}
@@ -2799,7 +2799,7 @@ END:VCARD`;
           {/* Swiish logo */}
           <div className="bg-card dark:bg-card-dark text-center space-y-2 mt-[24px] mb-[12px]">
             <div className="flex justify-center py-4">
-              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+              <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
             </div>
           </div>
         </div>
@@ -3166,7 +3166,7 @@ END:VCARD`;
         {/* Swiish logo */}
         <div className="bg-card dark:bg-card-dark pb-4 text-center space-y-2 mt-auto lg:pb-4">
           <div className="flex justify-center">
-            <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+            <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
           </div>
         </div>
       </div>
@@ -3589,7 +3589,7 @@ function EditorView({ data, setData, onBack, onSave, slug, settings, csrfToken, 
       </div>
       <div className="fixed bottom-4 right-4 z-10 text-center group">
         <div className="flex justify-center">
-          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
         </div>
       </div>
     </div>
@@ -5347,7 +5347,7 @@ function SettingsView({ settings, setSettings, onBack, onSave, apiCall, showAler
       </div>
       <div className="fixed bottom-4 right-4 z-10 text-center group">
         <div className="flex justify-center">
-          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-8 w-auto" />
+          <img src="/graphics/Enera_Logo.png" alt="Enera" className="h-24 w-auto" />
         </div>
       </div>
     </div>
